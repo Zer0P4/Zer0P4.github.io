@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta Camping Las Conchas | Edición Final</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #ffffff; padding: 30px 20px; font-family: 'Inter', sans-serif; }
+        .carta { max-width: 210mm; width: 100%; background: rgb(232, 226, 166);; border-radius: 20px; margin: auto; padding: 2rem; }
+        .header { text-align: center; border-bottom: 2px solid #2fafb8; margin-bottom: 2rem; padding-bottom: 1rem; }
+        .header h1 { color: #0a2f44; font-family: 'Playfair Display', serif; font-size: 2.5rem; }
+        .dos-mitades { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        .seccion {background-color: rgba(255, 255, 255, 0.836); border-radius: 30px; padding: 1rem; margin-bottom: 1rem;}
+        .seccion-titulo { font-size: 1.3rem; color: #0f4c5f; border-left: 4px solid #2fafb8; padding-left: 10px; margin-bottom: 1rem; font-weight: 600; }
+        .item { font-size: 1rem; margin-bottom: 0rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 0.5rem; }
+        .fila-superior { display: flex; justify-content: space-between; align-items: baseline; }
+        .item-nombre { font-weight: 700; color: #1f3e48; margin-bottom: 0.1rem;}
+        .item-precio { font-weight: 700; color: #000000; background: rgba(232, 226, 166);; padding: 1px 8px; border-radius: 10px; font-size: 0.9rem; }
+        .item-descripcion { display: block; font-size: 0.8rem; color: #666; font-style: italic; margin-top: 1px; margin-right: 2rem; }
+        .alternativas { display: block; font-size: 0.8rem; font-style: italic; margin-top: 1px; margin-right: 2rem; color: #e63737;}
+        .alergenos-container { margin-top: 6px; display: flex; gap: 8px; color: #1f6e7a; font-size: 0.8rem; }
+        .etiqueta-venta { background: #e63737; color: white; font-size: 0.6rem; padding: 2px 6px; border-radius: 4px; vertical-align: middle; text-transform: uppercase; margin-left: 1rem;}
+        .footer { margin-top: 2rem; padding-top: 1rem; border-top: 2px solid #eee; text-align: center; font-size: 0.8rem; color: #555; }
+        .leyenda-footer { display: flex; justify-content: center; gap: 15px; margin-top: 10px; flex-wrap: wrap; }
+        @media (max-width: 650px) { .dos-mitades { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+<div class="carta">
+    <div class="header"><h1>CAMPING LAS CONCHAS</h1></div>
+    <div class="dos-mitades">
+        <div>
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-utensils"></i> RACIONES</div>
+                
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Patatas Fritas</span><span class="item-precio">6 €</span></div>
+                    <span class="item-descripcion">Clásicas, doradas y crujientes. ¡Imprescindibles!</span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Patatas 3 Salsas</span><span class="item-precio">8 €</span></div>
+                    <span class="item-descripcion">Bravas con salsas brava, ali oli y queso azul.<span class="alternativas">¡O elige alguna de las salsas!</span></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Fingers de pollo crujientes</span><span class="item-precio">8 €</span></div>
+                    <span class="item-descripcion">Exterior extremadamente crujiente y un interior tan tierno que te sorprenderá. Acompáñalos con nuestra salsa especial de la casa.</span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Alitas de la Casa<span class="etiqueta-venta">Top</span></span><span class="item-precio">10 €</span></div>
+                    <span class="item-descripcion">Cocinadas a baja temperatura, terminadas con nuestro aliño secreto y un punto final crujiente.</span><span class="alternativas"> ¡Elige normales, salsa BBQ o picantes!</span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Croquetas</span><span class="item-precio">10 €</span></div>
+                    <span class="item-descripcion">Cremosas croquetas de cabrales o jamón.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i> <i class="fas fa-egg"></i></div>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Rabas de calamar</span><span class="item-precio">12 €</span></div>
+                    <span class="item-descripcion">Tiras de calamar fritas con un punto extra de crujiente. Un clásico marinero que nunca falla.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i> <i class="fas fa-egg"></i></div>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Nachos Machos<span class="etiqueta-venta">Top Ventas</span></span><span class="item-precio">13,50 €</span></div>
+                    <span class="item-descripcion">Con Pulled pork, cheddar, crema agria y jalapeños.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></div>
+                </div>    
+            </div>
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-leaf"></i> ENSALADAS</div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Ensalada mixta</span><span class="item-precio">12 €</span></div>
+                    <span class="item-descripcion">Lechugas frescas, tomate, cebolla, maíz y atún.</span>
+                    <div class="alergenos-container"><i class="fas fa-fish"></i></div>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-bread-slice"></i> BOCATAS</div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Sándwich mixto</span><span class="item-precio">6 €</span></div>
+                    <span class="item-descripcion">Jamón york y queso fundido en pan tostado.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></div>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Jamón Ibérico</span><span class="item-precio">14 €</span></div>
+                    <span class="item-descripcion">Jamón Ibérico D.O. Los Pedroches en pan crujiente.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i></div>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Pollo plancha</span><span class="item-precio">7 €</span></div>
+                    <span class="item-descripcion">Pechuga, mayonesa y lechuga fresca.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-egg"></i></div>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Lomo con queso</span><span class="item-precio">7 €</span></div>
+                    <span class="item-descripcion">Lomo tierno con una generosa capa de queso.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></div>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Bacon con queso</span><span class="item-precio">7 €</span></div>
+                    <span class="item-descripcion">Bacon crujiente fundido con queso.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-hamburger"></i> HAMBURGUESAS</div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Clásica<span class="etiqueta-venta">Favorito</span></span><span class="item-precio">12 €</span></div>
+                    <span class="item-descripcion">Ternera, vegetales, queso y salsa secreta.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></div>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Cheeseburguer</span><span class="item-precio">8 €</span></div>
+                    <span class="item-descripcion">Carne de calidad con abundante queso cheddar.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></div>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-pizza-slice"></i> PIZZAS</div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Margarita</span><span class="item-precio">9 €</span></div>
+                    <span class="item-descripcion">Tomate natural y mozzarella fundida.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></div>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Prosciutto</span><span class="item-precio">10 €</span></div>
+                    <span class="item-descripcion">Con jamón york de primera calidad.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></div>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">BBQ Explosiva</span><span class="item-precio">13 €</span></div>
+                    <span class="item-descripcion">Bacon, cebolla, mozzarella y salsa BBQ.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></div>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">4 Quesos Supreme</span><span class="item-precio">13 €</span></div>
+                    <span class="item-descripcion">Selección de mozzarella, cheddar, edam y azul.</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></div>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-cookie-bite"></i> POSTRES</div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Tarta de queso</span><span class="item-precio">5 €</span></div>
+                    <span class="item-descripcion">Si buscas un final de diez, aquí lo tienes. Casera, cremosa y suave. ¡Adictiva!</span>
+                    <div class="alergenos-container"><i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p><strong>IVA incluido</strong> | <strong>Horario de cocina:</strong> hasta las 23:30h</p>
+        <div class="leyenda-footer">
+            <span><i class="fas fa-bread-slice"></i> Gluten</span>
+            <span><i class="fas fa-cheese"></i> Lácteos</span>
+            <span><i class="fas fa-egg"></i> Huevos</span>
+            <span><i class="fas fa-fish"></i> Pescado</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
