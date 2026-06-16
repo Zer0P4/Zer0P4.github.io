@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping Las Conchas Menu | Final Edition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #ffffff; padding: 30px 20px; font-family: 'Inter', sans-serif; }
+        .carta { max-width: 210mm; width: 100%; background: rgb(232, 226, 166); border-radius: 20px; margin: auto; padding: 2rem; }
+        .logo-container { display: flex; justify-content: center; }
+        .logo { max-width: 300px; width: 100%; height: auto; display: block; } 
+        .language-switcher { display: flex; gap: 15px; margin-top: 0rem; justify-content: center; }
+        .language-switcher a { font-size: 1.5rem; text-decoration: none; transition: transform 0.2s; }
+        .language-switcher a:hover { transform: scale(1.2); }
+        .header { text-align: center; border-bottom: 2px solid #2fafb8; margin-bottom: 2rem; padding-bottom: 1rem; }
+        .header h1 { color: #0a2f44; font-family: 'Playfair Display', serif; font-size: 2.5rem; }
+        .dos-mitades { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 0.5rem; }
+        .seccion {background-color: rgba(255, 255, 255, 0.836); border-radius: 30px; padding: 1rem; margin-bottom: 1rem;}
+        .seccion-titulo { font-size: 1.3rem; color: #0f4c5f; border-left: 4px solid #2fafb8; padding-left: 10px; margin-bottom: 1rem; font-weight: 600; }
+        .item { font-size: 1rem; margin-bottom: 0rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 0.2rem; }
+        .fila-superior { display: flex; justify-content: space-between; align-items: baseline; }
+        .item-nombre { font-weight: 700; color: #1f3e48; padding: 0.2rem 0rem; }
+        .item-precio { font-weight: 700; color: #000000; background: rgba(232, 226, 166); padding: 1px 8px; border-radius: 10px; font-size: 0.9rem; }
+        .item-descripcion { display: block; font-size: 0.8rem; color: #666; font-style: italic; margin-top: 1px; margin-right: 2rem; }
+        .alternativas { display: block; font-size: 0.8rem; font-style: italic; margin-top: 1px; margin-right: 2rem; color: #e63737;}
+        .alergenos-container { margin-top: 6px; display: flex; gap: 8px; color: #1f6e7a; font-size: 0.8rem; }
+        .etiqueta-venta { background: #e63737; color: white; font-size: 0.6rem; padding: 2px 6px; border-radius: 4px; vertical-align: middle; text-transform: uppercase; margin-left: 0.5rem; }
+        .footer { margin-top: 2rem; padding-top: 1rem; border-top: 2px solid #eee; text-align: center; font-size: 0.8rem; color: #555; }
+        .leyenda-footer { display: flex; justify-content: center; gap: 15px; margin-top: 10px; flex-wrap: wrap; }
+        @media (max-width: 650px) { .dos-mitades { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+<div class="carta">
+    <div class="logo-container">
+        <img class="logo" src="img/Logo_Restaurante_Camping_Las_Conchas-removebg-preview.png" alt="Logo Camping Las Conchas">
+    </div>
+    <div class="language-switcher">
+            <a href="index.html" title="Español">🇪🇸</a>
+            <a href="index_en.html" title="English">🇬🇧</a>
+            <a href="index_fr.html" title="Français">🇫🇷</a>
+            <a href="index_de.html" title="Deutsch">🇩🇪</a>
+    </div>
+    <div class="dos-mitades">
+        <div>
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-utensils"></i> STARTERS / SNACKS</div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">French Fries</span><span class="item-precio">6€</span></div>
+                    <span class="item-descripcion">Classic, golden and crispy. Essential!</span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Chorizo in Cider</span><span class="item-precio">6,5€</span></div>
+                    <span class="item-descripcion">Asturian chorizo in cider. A classic of our cuisine, tender and full of flavor. <i class="fas fa-bread-slice"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">3-Sauce Fries</span><span class="item-precio">8€</span></div>
+                    <span class="item-descripcion">Brava fries with brava sauce, aioli, and blue cheese. <i class="fas fa-cheese"></i><span class="alternativas">Or choose any of the sauces! </span></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Crispy Chicken Fingers</span><span class="item-precio">9€</span></div>
+                    <span class="item-descripcion">Extremely crispy exterior and a tender interior that will surprise you. Pair them with our special house sauce. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">House Wings<span class="etiqueta-venta">Top</span></span><span class="item-precio">10€</span></div>
+                    <span class="item-descripcion">Slow-cooked for maximum juiciness, finished with our secret rub and a final crispy touch. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span><span class="alternativas"> Choose them plain or spicy!</span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Croquettes</span><span class="item-precio">12€</span></div>
+                    <span class="item-descripcion">Creamy ham or Cabrales cheese croquettes. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i> <i class="fas fa-egg"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Calamari Rings</span><span class="item-precio">12€</span></div>
+                    <span class="item-descripcion">Fried calamari strips with just the right amount of crunch. A sailor classic that never fails. <i class="fas fa-bread-slice"></i> <i class="fas fa-fish"></i> <i class="fas fa-egg"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Machos Nachos<span class="etiqueta-venta">Top</span></span><span class="item-precio">13€</span></div>
+                    <span class="item-descripcion">Authentic totopos with homemade pulled pork, cheddar sauce, sour cream, and jalapeños. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Mixed Plate</span><span class="item-precio">13€</span></div>
+                    <span class="item-descripcion">Chicken breast, or Pork loin, or Bacon, with eggs and French fries or salad. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>        
+            </div>
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-leaf"></i> SALADS</div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Mixed Salad</span><span class="item-precio">8€</span></div>
+                    <span class="item-descripcion">Fresh lettuce, tomato, and onion.</span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Las Conchas Salad</span><span class="item-precio">12€</span></div>
+                    <span class="item-descripcion">Fresh lettuce, tomato, onion, asparagus, olives, egg, and tuna. <i class="fas fa-fish"></i> <i class="fas fa-egg"></i> </span>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-bread-slice"></i> SANDWICHES</div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Mixed Sandwich</span><span class="item-precio">8€</span></div>
+                    <span class="item-descripcion">Ham, cheese, lettuce, tomato, and egg on toasted bread. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i> <i class="fas fa-egg"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Country Chicken</span><span class="item-precio">8€</span></div>
+                    <span class="item-descripcion">Chicken breast with cheese, lettuce, and tomato. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Pork Loin with Cheese</span><span class="item-precio">8€</span></div>
+                    <span class="item-descripcion">Tender pork loin with a generous layer of cheese. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Bacon with Cheese</span><span class="item-precio">8€</span></div>
+                    <span class="item-descripcion">Crispy bacon with melted cheese. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Iberian Ham</span><span class="item-precio">14€</span></div>
+                    <span class="item-descripcion">D.O. Los Pedroches Iberian ham on crispy bread. <i class="fas fa-bread-slice"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Pulled Pork Sandwich</span><span class="item-precio">14€</span></div>
+                    <span class="item-descripcion">Our homemade pulled pork with melted cheddar cheese on crispy bread. <i class="fas fa-bread-slice"></i></span>
+                </div>  
+            </div>
+        </div>
+        <div>
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-hamburger"></i> BURGERS</div>
+                <div class="item"> 
+                    <div class="fila-superior"><span class="item-nombre">Cheeseburger</span><span class="item-precio">10€</span></div>
+                    <span class="item-descripcion">Beef patty with plenty of cheddar cheese. Served with French fries. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Conchas Gourmet<span class="etiqueta-venta">Favorito</span></span><span class="item-precio">13€</span></div>
+                    <span class="item-descripcion">Beef patty, bacon jam, caramelized onion, cheese, and secret sauce. Served with French fries. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Double Impact<span class="etiqueta-venta">Favorito</span></span><span class="item-precio">14€</span></div>
+                    <span class="item-descripcion">Beef patty, our Pulled Pork, caramelized onion, cheese, and secret sauce. Served with French fries. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-pizza-slice"></i> PIZZAS</div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Margarita</span><span class="item-precio">9€</span></div>
+                    <span class="item-descripcion">Tomato sauce and melted mozzarella. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Prosciutto</span><span class="item-precio">10€</span></div>
+                    <span class="item-descripcion">Tomato sauce, mozzarella, and cooked ham. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Prosciutto e Funghi</span><span class="item-precio">10€</span></div>
+                    <span class="item-descripcion">Tomato sauce, mozzarella, cooked ham, and mushrooms. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">BBQ Explosive</span><span class="item-precio">13€</span></div>
+                    <span class="item-descripcion">Tomato sauce, mozzarella, bacon, onion, and BBQ sauce. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">4 Supreme Cheeses</span><span class="item-precio">13€</span></div>
+                    <span class="item-descripcion">Selection of mozzarella, cheddar, edam, and blue cheese. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-cookie-bite"></i> DESSERTS</div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Cheesecake</span><span class="item-precio">5€</span></div>
+                    <span class="item-descripcion">If you are looking for a ten out of ten finish, here it is. Homemade, creamy, and smooth. Addictive! <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">American Style Brownie</span><span class="item-precio">6€</span></div>
+                    <span class="item-descripcion">Artisan brownie with pure chocolate and the creamy freshness of vanilla ice cream. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>VAT included | Kitchen hours: Breakfast 09:00-11:30, Lunch 13:00-15:30, Dinner 20:00-23:00</p>
+        <div class="leyenda-footer">
+            <span><i class="fas fa-bread-slice"></i> Gluten</span>
+            <span><i class="fas fa-cheese"></i> Dairy</span>
+            <span><i class="fas fa-egg"></i> Eggs</span>
+            <span><i class="fas fa-fish"></i> Fish</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
