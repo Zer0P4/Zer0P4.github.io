@@ -10,7 +10,7 @@
         body { background-color: #ffffff; padding: 30px 20px; font-family: 'Inter', sans-serif; }
         .carta { max-width: 210mm; width: 100%; background: rgb(232, 226, 166);; border-radius: 20px; margin: auto; padding: 2rem; }
         .logo-container { display: flex; justify-content: center; }
-        .logo { max-width: 300px; width: 100%; height: auto; display: block; }        
+        .logo { max-width: 150px; width: 100%; height: auto; display: block; }        
         .language-switcher { display: flex; gap: 15px; margin-top: 0rem; justify-content: center; }
         .language-switcher a { font-size: 1.5rem; text-decoration: none; transition: transform 0.2s; }
         .language-switcher a:hover { transform: scale(1.2); }
@@ -21,9 +21,9 @@
         .seccion-titulo { font-size: 1.3rem; color: #0f4c5f; border-left: 4px solid #2fafb8; padding-left: 10px; margin-bottom: 1rem; font-weight: 600; }
         .item { font-size: 1rem; margin-bottom: 0rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 0.2rem; }
         .fila-superior { display: flex; justify-content: space-between; align-items: baseline; }
-        .item-nombre { font-weight: 700; color: #1f3e48; padding: 0.2rem 0rem; }
+        .item-nombre { font-weight: 700; color: #1f3e48; padding: 0rem 0rem; }
         .item-precio { font-weight: 700; color: #000000; background: rgba(232, 226, 166);; padding: 1px 8px; border-radius: 10px; font-size: 0.9rem; }
-        .item-descripcion { display: block; font-size: 0.8rem; color: #666; font-style: italic; margin-top: 1px; margin-right: 2rem; }
+        .item-descripcion { display: block; font-size: 0.8rem; color: #666; font-style: italic; margin-top: 0px; margin-right: 2rem; }
         .alternativas { display: block; font-size: 0.8rem; font-style: italic; margin-top: 1px; margin-right: 2rem; color: #e63737;}
         .alergenos-container { margin-top: 6px; display: flex; gap: 8px; color: #1f6e7a; font-size: 0.8rem; }
         .etiqueta-venta { background: #e63737; color: white; font-size: 0.6rem; padding: 2px 6px; border-radius: 4px; vertical-align: middle; text-transform: uppercase; margin-left: 0.5rem; }
@@ -55,7 +55,7 @@
                     <span class="item-descripcion">Clásicas, doradas y crujientes. ¡Imprescindibles!</span>
                 </div>
                 <div class="item">
-                    <div class="fila-superior"><span class="item-nombre">Chorizo a la Sidra</span><span class="item-precio">6,5€</span></div>
+                    <div class="fila-superior"><span class="item-nombre">Chorizo a la Sidra</span><span class="item-precio">6,50€</span></div>
                     <span class="item-descripcion">Chorizo asturiano a la sidra. Un clásico de nuestra cocina, tierno y lleno de sabor. </span>
                 </div>
                 <div class="item">
@@ -67,6 +67,10 @@
                     <span class="item-descripcion">Textura brutal, sabor de escándalo. Con nuestra mayonesa citrica y picante</span>
                 </div>
                 <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Tabla de Quesos Asturianos</span><span class="item-precio">14€</span></div>
+                    <span class="item-descripcion">Selección artesanal de quesos de la región, destacando variedades azules y ahumadas. <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Fingers de Pollo Crujientes</span><span class="item-precio">9€</span></div>
                     <span class="item-descripcion">Exterior extremadamente crujiente y un interior tan tierno que te sorprenderá. Acompáñalos con nuestra salsa especial de la casa. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
@@ -75,16 +79,16 @@
                     <span class="item-descripcion">Aliñadas y cocinadas a baja temperatura, despues las freimos para el punto final crujiente. ¡Las reinas de la casa! <i class="fas fa-bread-slice"></i> <span class="alternativas"> ¡Eligelas normales o picantes!</span>
                 </div>
                 <div class="item">
-                    <div class="fila-superior"><span class="item-nombre">Costillas glaseasas BBQ</span><span class="item-precio">14€</span></div>
-                    <span class="item-descripcion">Aliñadas y cocinadas a baja temperatura, acabadas al horno con nuestra salsa casera BBQ. </span>
-                </div>
-                <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Croquetas</span><span class="item-precio">12€</span></div>
                     <span class="item-descripcion">Cremosas croquetas de jamón o queso cabrales. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i> <i class="fas fa-egg"></i></span>
                 </div>
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Rabas de Calamar</span><span class="item-precio">12€</span></div>
                     <span class="item-descripcion">Tiras de calamar fritas acompañadas de patatas.  <i class="fas fa-bread-slice"></i> <i class="fas fa-fish"></i> <i class="fas fa-egg"></i>.</span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Costillas glaseadas BBQ</span><span class="item-precio">14€</span></div>
+                    <span class="item-descripcion">Aliñadas y cocinadas a baja temperatura, acabadas al horno con nuestra salsa casera BBQ. </span>
                 </div>
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Nachos Machos<span class="etiqueta-venta">Top</span></span><div class="alergenos-container"></div><span class="item-precio">14€</span></div>
@@ -120,11 +124,11 @@
                     <span class="item-descripcion">Jamón cocido, queso, lechuga, tomate y huevo en pan de molde tostado. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i> <i class="fas fa-egg"></i></span>
                 </div>
                 <div class="item">
-                    <div class="fila-superior"><span class="item-nombre">Pollo Campero</span><span class="item-precio">8€</span></div>
+                    <div class="fila-superior"><span class="item-nombre">Pollo Campero</span><span class="item-precio">8,50€</span></div>
                     <span class="item-descripcion">Pechuga de pollo con queso, lechuga y tomate en pan de chapata crujiente. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
                 <div class="item">
-                    <div class="fila-superior"><span class="item-nombre">Lomo con Queso</span><span class="item-precio">8€</span></div>
+                    <div class="fila-superior"><span class="item-nombre">Lomo con Queso</span><span class="item-precio">8,50€</span></div>
                     <span class="item-descripcion">Lomo tierno con una generosa capa de queso en pan de chapata crujiente. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
                 <div class="item">
@@ -169,7 +173,6 @@
                     <span class="item-descripcion">Salsa de tomate, mozzarella jamón cocido y champiñones. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                     <div class="alergenos-container"></div>
                 </div>
-
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">BBQ Explosiva</span><span class="item-precio">13€</span></div>
                     <span class="item-descripcion">Salsa de tomate, mozzarella, bacon, cebolla y salsa BBQ. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
@@ -185,6 +188,14 @@
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Dulce Cabra</span><span class="item-precio">14€</span></div>
                     <span class="item-descripcion">Mozzarella, queso de cabra, bacon, miel. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Diavolica</span><span class="item-precio">14€</span></div>
+                    <span class="item-descripcion">Salsa de tomate, mozzarella, pepperoni y aceite picante. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Cochinita</span><span class="item-precio">14€</span></div>
+                    <span class="item-descripcion">Salsa de tomate, mozzarella, pulled pork y champiñones. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
             </div>
             
