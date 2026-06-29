@@ -21,7 +21,7 @@
         .seccion-titulo { font-size: 1.3rem; color: #0f4c5f; border-left: 4px solid #2fafb8; padding-left: 10px; margin-bottom: 1rem; font-weight: 600; }
         .item { font-size: 1rem; margin-bottom: 0rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 0.2rem; }
         .fila-superior { display: flex; justify-content: space-between; align-items: baseline; }
-        .item-nombre { font-weight: 700; color: #1f3e48; padding: 0rem 0rem; }
+        .item-nombre { font-weight: 700; color: #1f3e48; margin-top: 0.6rem; }
         .item-precio { font-weight: 700; color: #000000; background: rgba(232, 226, 166);; padding: 1px 8px; border-radius: 10px; font-size: 0.9rem; }
         .item-descripcion { display: block; font-size: 0.8rem; color: #666; font-style: italic; margin-top: 0px; margin-right: 2rem; }
         .alternativas { display: block; font-size: 0.8rem; font-style: italic; margin-top: 1px; margin-right: 2rem; color: #e63737;}
@@ -150,7 +150,7 @@
                 </div>
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Conchas Gourmet<span class="etiqueta-venta">Top</span></span><span class="item-precio">13€</span></div>
-                    <span class="item-descripcion">Carne de ternera, mermelada de bacon, cebolla caramelizada, queso cheddar y salsa secreta. Acompañada de patatas fritas. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                    <span class="item-descripcion">Carne de ternera, mermelada de bacon y cebolla caramelizada, queso cheddar y salsa secreta. Acompañada de patatas fritas. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
                     <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Doble Impacto<span class="etiqueta-venta">Top</span></span><span class="item-precio">14€</span></div>
@@ -169,8 +169,13 @@
                     <span class="item-descripcion">Salsa de tomate, mozzarella y jamón cocido. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
                 <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Tonno</span><span class="item-precio">12€</span></div>
+                    <span class="item-descripcion">Salsa de tomate, mozzarella, atun y cebolla. <i class="fas fa-bread-slice"></i> <i class="fas fa-fish"></i> <i class="fas fa-cheese"></i></span>
+                    <div class="alergenos-container"></div>
+                </div>
+                <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Prosciutto e Funghi</span><span class="item-precio">12€</span></div>
-                    <span class="item-descripcion">Salsa de tomate, mozzarella jamón cocido y champiñones. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                    <span class="item-descripcion">Salsa de tomate, mozzarella, jamón cocido y champiñones. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                     <div class="alergenos-container"></div>
                 </div>
                 <div class="item">
@@ -179,15 +184,15 @@
                 </div>
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">4 Quesos Supreme</span><span class="item-precio">14€</span></div>
-                    <span class="item-descripcion">Salsa de tomate, mozzarella, cheddar, edam y azul. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                    <span class="item-descripcion">Salsa de tomate, mozzarella, cheddar, edam y queso azul. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Perita</span><span class="item-precio">14€</span></div>
-                    <span class="item-descripcion">Mozzarella, pera, queso azul. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                    <span class="item-descripcion">Mozzarella, base de crema, pera y queso azul. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Dulce Cabra</span><span class="item-precio">14€</span></div>
-                    <span class="item-descripcion">Mozzarella, queso de cabra, bacon, miel. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                    <span class="item-descripcion">Mozzarella, base de crema, queso de cabra, bacon, miel. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Diavolica</span><span class="item-precio">14€</span></div>
@@ -195,7 +200,7 @@
                 </div>
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Cochinita</span><span class="item-precio">14€</span></div>
-                    <span class="item-descripcion">Salsa de tomate, mozzarella, pulled pork y champiñones. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                    <span class="item-descripcion">Salsa de tomate, mozzarella, pulled pork, salsa cheddar y cebolla roja encurtida. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
             </div>
             
@@ -227,11 +232,11 @@
                 </div>
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Tarta de Queso</span><span class="item-precio">6€</span></div>
-                    <span class="item-descripcion">Casera, cremosa y suave, con un coulís de arándanos locales hecho aqui ¡Adictiva! <i class="fas fa-cheese"></i></span>
+                    <span class="item-descripcion">Casera, cremosa y suave, con un coulís de arándanos locale ¡Adictiva! <i class="fas fa-cheese"></i></span>
                 </div>
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Brownie American Style</span><span class="item-precio">6€</span></div>
-                    <span class="item-descripcion">Brownie artesano con chocolate puro y el frescor cremoso del helado de vainilla. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                    <span class="item-descripcion">Brownie artesano estilo americano. Calentito, con helado de vainilla y crema de Nocilla. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
             </div>
         </div>
