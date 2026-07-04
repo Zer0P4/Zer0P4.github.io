@@ -7,8 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        @page { size: A4 portrait; margin: 0; }
         body { background-color: #ffffff; padding: 30px 20px; font-family: 'Inter', sans-serif; }
-        .carta { max-width: 210mm; width: 100%; background: rgb(232, 226, 166);; border-radius: 20px; margin: auto; padding: 2rem; }
+        .carta { max-width: 300mm; width: 100%; min-height: 297mm; background: rgb(232, 226, 166); border-radius: 20px; margin: auto; padding: 2rem; }
         .logo-container { display: flex; justify-content: center; }
         .logo { max-width: 150px; width: 100%; height: auto; display: block; }        
         .language-switcher { display: flex; gap: 15px; margin-top: 0rem; justify-content: center; }
@@ -18,7 +19,7 @@
         .header h1 { color: #0a2f44; font-family: 'Playfair Display', serif; font-size: 2.5rem; }
         .dos-mitades { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 0.5rem;}
         .seccion {background-color: rgba(255, 255, 255, 0.836); border-radius: 30px; padding: 1rem; margin-bottom: 1rem;}
-        .seccion-titulo { font-size: 1.3rem; color: #0f4c5f; border-left: 4px solid #2fafb8; padding-left: 10px; margin-bottom: 1rem; font-weight: 600; }
+        .seccion-titulo { font-size: 1.1rem; color: #0f4c5f; border-left: 4px solid #2fafb8; padding-left: 10px; margin-bottom: 1rem; font-weight: 600; }
         .item { font-size: 1rem; margin-bottom: 0rem; border-bottom: 1px solid #f0f0f0; padding-bottom: 0.2rem; }
         .fila-superior { display: flex; justify-content: space-between; align-items: baseline; }
         .item-nombre { font-weight: 700; color: #1f3e48; margin-top: 0.6rem; }
@@ -30,6 +31,15 @@
         .footer { margin-top: 2rem; padding-top: 1rem; border-top: 2px solid #eee; text-align: center; font-size: 0.8rem; color: #555; }
         .leyenda-footer { display: flex; justify-content: center; gap: 15px; margin-top: 10px; flex-wrap: wrap; }
         @media (max-width: 650px) { .dos-mitades { grid-template-columns: 1fr; } }
+        @media print {
+            body { padding: 0; margin: 0; background: white; }
+            .carta { width: 210mm; min-height: 297mm; margin: 0; border-radius: 0; padding: 12mm; }
+            .dos-mitades { gap: 1rem; }
+            .seccion { padding: 0.8rem; }
+            .item-nombre { font-size: 0.95rem; }
+            .item-descripcion { font-size: 0.72rem; margin-right: 0; }
+            .item-precio { font-size: 0.85rem; }
+        }
     </style>
 </head>
 <body>
@@ -46,8 +56,34 @@
     <!--<div class="header"><h1> RESTAURANTE CAMPING LAS CONCHAS</h1></div> -->
     <div class="dos-mitades">
         
-        <!------------------------SECCIÓN ENTRANTES/RACIONES--------------------------->
         <div>
+            <!------------------------SECCIÓN DESAYUNOS--------------------------->
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-coffee"></i> DESAYUNOS </div>                
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Desayuno Continental</span><span class="item-precio">7€</span></div>
+                    <span class="item-descripcion">Café o infusión, zumo de naranja natural y tostada con mantequilla y mermelada, tomate y aceite o bollería. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>                
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Desayuno Las Conchas</span><span class="item-precio">8,5€</span></div>
+                    <span class="item-descripcion">Café o infusión, zumo natural y nuestra tostada especial con jamón o embutido, tomate y aceite, o pincho. <i class="fas fa-bread-slice"> <i class="fas fa-cheese"></i></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Tostada </span><span class="item-precio">3,5€</span></div>
+                    <span class="item-descripcion">Rebanadas de pan tostado con tomate y aceite o mantequilla y mermelada. <i class="fas fa-bread-slice"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Tostada Especial </span><span class="item-precio">4€</span></div>
+                    <span class="item-descripcion">Rebanadas de pan tostado con tomate y aceite con jamón o embutido. <i class="fas fa-bread-slice"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Zumo de Naranja Natural </span><span class="item-precio">3€</span></div>
+                    <span class="item-descripcion">Recién exprimido. </i></span>
+                </div>
+
+
+            </div>
+            <!------------------------SECCIÓN ENTRANTES/RACIONES--------------------------->
             <div class="seccion">
                 <div class="seccion-titulo"><i class="fas fa-utensils"></i> ENTRANTES / RACIONES</div>                
                 <div class="item">
@@ -64,7 +100,7 @@
                 </div>
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Falafel</span><span class="item-precio">8€</span></div>
-                    <span class="item-descripcion">Textura brutal, sabor de escándalo. Con nuestra mayonesa citrica y picante</span>
+                    <span class="item-descripcion">Bolas de masa de garbanzos especiada y frita, textura brutal, sabor de escándalo. Con nuestra mayonesa citrica y picante. Opción Vegana.</span>
                 </div>
                 <div class="item">
                     <div class="fila-superior"><span class="item-nombre">Tabla de Quesos Asturianos</span><span class="item-precio">14€</span></div>
@@ -99,12 +135,11 @@
                     <span class="item-descripcion">Pechuga de pollo, o Lomo de cerdo, o Bacon, con huevos y patatas fritas o ensalada. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>        
             </div>
-
             <!------------------------SECCIÓN ENSALADAS--------------------------->
             <div class="seccion">
                 <div class="seccion-titulo"><i class="fas fa-leaf"></i> ENSALADAS</div>
                 <div class="item">
-                    <div class="fila-superior"><span class="item-nombre">Ensalada Mixta</span><span class="item-precio">10€</span></div>
+                    <div class="fila-superior"><span class="item-nombre">Ensalada Mixta</span><span class="item-precio">9€</span></div>
                     <span class="item-descripcion">Lechugas frescas, tomate, atún y cebolla. <i class="fas fa-fish"></i></span>
                 </div>
                     <div class="item">
@@ -117,31 +152,11 @@
                     <span class="item-descripcion">Tomate, aguacate, burrata y pesto.  <i class="fas fa-cheese"></i> </span>
                 </div>
             </div>
-            <div class="seccion">
-                <div class="seccion-titulo"><i class="fas fa-bread-slice"></i> BOCATAS</div>
-                <div class="item">
-                    <div class="fila-superior"><span class="item-nombre">Sándwich Mixto</span><span class="item-precio">6€</span></div>
-                    <span class="item-descripcion">Jamón cocido, queso, lechuga, tomate y huevo en pan de molde tostado. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i> <i class="fas fa-egg"></i></span>
-                </div>
-                <div class="item">
-                    <div class="fila-superior"><span class="item-nombre">Pollo Campero</span><span class="item-precio">8,50€</span></div>
-                    <span class="item-descripcion">Pechuga de pollo con queso, lechuga y tomate en pan de chapata crujiente. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
-                </div>
-                <div class="item">
-                    <div class="fila-superior"><span class="item-nombre">Lomo con Queso</span><span class="item-precio">8,50€</span></div>
-                    <span class="item-descripcion">Lomo tierno con una generosa capa de queso en pan de chapata crujiente. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
-                </div>
-                <div class="item">
-                    <div class="fila-superior"><span class="item-nombre">Pulled Pork</span><span class="item-precio">12€</span></div>
-                    <span class="item-descripcion">Nuestro Pulled Pork casero, queso cheddar fundido, y cebolla roja encurtida en pan de chapata crujiente. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
-                </div>  
-  
-            </div>
         </div>
 
 
-        <!------------------------SECCIÓN HAMBURGUESAS--------------------------->
         <div>
+            <!------------------------SECCIÓN HAMBURGUESAS--------------------------->
             <div class="seccion">
                 <div class="seccion-titulo"><i class="fas fa-hamburger"></i> HAMBURGUESAS</div>
                 <div class="item"> 
@@ -157,6 +172,7 @@
                     <span class="item-descripcion">Carne de ternera, nuestro Pulled Pork, cebolla roja encurtida, queso cheddar y salsa secreta. Acompañada de patatas fritas. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
             </div>
+             <!------------------------SECCIÓN PIZZAS--------------------------->
             <div class="seccion">
                 <div class="seccion-titulo"><i class="fas fa-pizza-slice"></i> PIZZAS</div>
                 <div class="item">
@@ -203,6 +219,27 @@
                     <span class="item-descripcion">Salsa de tomate, mozzarella, pulled pork, salsa cheddar y cebolla roja encurtida. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
                 </div>
             </div>
+
+            <!------------------------SECCIÓN BOCATAS--------------------------->           
+            <div class="seccion">
+                <div class="seccion-titulo"><i class="fas fa-bread-slice"></i> BOCATAS</div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Sándwich Mixto</span><span class="item-precio">6€</span></div>
+                    <span class="item-descripcion">Jamón cocido, queso, lechuga, tomate y huevo en pan de molde tostado. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i> <i class="fas fa-egg"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Pollo Campero</span><span class="item-precio">8,50€</span></div>
+                    <span class="item-descripcion">Pechuga de pollo con queso, lechuga y tomate en pan de chapata crujiente. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Lomo con Queso</span><span class="item-precio">8,50€</span></div>
+                    <span class="item-descripcion">Lomo tierno con una generosa capa de queso en pan de chapata crujiente. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+                <div class="item">
+                    <div class="fila-superior"><span class="item-nombre">Pulled Pork</span><span class="item-precio">12€</span></div>
+                    <span class="item-descripcion">Nuestro Pulled Pork casero, queso cheddar fundido, y cebolla roja encurtida en pan de chapata crujiente. <i class="fas fa-bread-slice"></i> <i class="fas fa-cheese"></i></span>
+                </div>
+            </div>
             
                        
             <!------------------------SECCIÓN ARROCES--------------------------->
@@ -224,6 +261,8 @@
                     <span class="alternativas"> Solo por encargo - Precio por persona</span>
                 </div>
             </div> -->
+
+            <!------------------------SECCIÓN POSTRES--------------------------->
             <div class="seccion">
                 <div class="seccion-titulo"><i class="fas fa-cookie-bite"></i> POSTRES</div>
                 <div class="item">
